@@ -1,0 +1,105 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+ol, ul {
+    list-style: none;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+/* header */
+header {
+    height: 105px;
+}
+header img {
+    height: 100%;
+}
+.menu_icon {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    height: 30px;
+    cursor: pointer;
+}
+.menu_icon span {
+    display: block;
+    background: #000;
+    height: 2px;
+    margin-top: 5px;
+    text-align: right;
+    text-align: -moz-right;
+}
+.menu_icon > span:nth-of-type(1) {
+    width: 40px;
+}
+.menu_icon > span:nth-of-type(2) {
+    width: 30px;
+    margin-left: 10px;
+}
+.menu_icon > span:nth-of-type(3) {
+    width: 20px;
+    margin-left: 20px;
+}
+.menu_icon > span:nth-of-type(4) {
+    width: 10px;
+    margin-left: 30px;
+}
+ul {
+    position: absolute;
+    right: 270px;
+    top: 40px;
+}
+li {
+    display: inline-block;
+    margin-left: 150px;
+    height: 40px;
+    width: 120px;
+    text-align: center;
+}
+.arrowL > span, .arrowR > span {
+    position: absolute;
+    display: block;
+    top: 50%;
+    height: 60px;
+    width: 3px;
+    background: #000;
+}
+.arrowL > span:nth-of-type(1) {
+    left: 100px;
+    transform: rotate(45deg) translate(50%, -50%);
+}
+.arrowL > span:nth-of-type(2) {
+    left: 100px;
+    transform: rotate(-45deg)  translate(50%, 50%);
+}
+.arrowL > span:nth-of-type(1):after {
+    content: "";
+    posittion: absolute;
+    width: 3px;
+    color: black;
+    transform: rotate(45deg) translate(50%, -50%);
+}
+.arrowR > span:nth-of-type(1) {
+    right: 100px;
+    transform: rotate(-45deg) translate(-50%, -50%);
+}
+.arrowR > span:nth-of-type(2) {
+    right: 100px;
+    transform: rotate(45deg)  translate(-50%, 50%);
+}
+
+/* main */
+main img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 470px;
+}
